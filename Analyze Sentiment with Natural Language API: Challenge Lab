@@ -1,8 +1,6 @@
+export ZONE=
 export API_KEY=
 
-curl -LO raw.githubusercontent.com/quiccklabs/Labs_solutions/master/Analyze%20Sentiment%20with%20Natural%20Language%20API%20Challenge%20Lab/quicklabarc130.sh
+gcloud compute ssh lab-vm --zone=$ZONE --quiet --command "curl -LO raw.githubusercontent.com/Techcps/ARC/master/Analyze%20Sentiment%20with%20Natural%20Language%20API%3A%20Challenge%20Lab/techcpsarc130.sh && sudo chmod +x techcpsarc130.sh && ./techcpsarc130.sh"
 
-sudo chmod +x quicklabarc130.sh
-
-./quicklabarc130.sh
 
